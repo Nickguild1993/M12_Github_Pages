@@ -1,2 +1,3 @@
-# Module_12pages
-Repo for the testing of github pages
+# Module 12 Challenge
+
+The purpose of this challenge was to create charts from the samples.json file to that dynamically display different informaiton about the bacteria found in participants belly buttons.  Vistors to the website could search the dataset by the participants randomly assigned ID number and the graphs will update to correspond to that individuals bacterial environment.  To display the various facets of the datset, we created three different types of charts - a **bar graph** that shows the top 10 bacteria cultures found in the currently selected participants belly button, a **bubble chart** that shows the amount of bacteria harvested per sampling, and finally a **gauge chart** that illustrates the seleceted individuals propensity for washing their belly button.  
