@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:whitesmoke;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-color: black;">
+        <img src="dril.png" style="background-size: cover;"/>
+        <h1 style="color: azure;">Belly Button Biodiversity Dashboard</h1>
+        <p style="color: teal;">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSl_dMPdwfA" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Now that's what I call informative!</p>
+    </div>
+    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+      <p>The graphs below illustrate different parameters of belly button bacteria. The reason we're looking at belly button bacteria
+        is that we've indentified it as the environment that is most hostpitable to the specific type of bacteria that we are looking to cultivate 
+        in order to make our imitation beef, which we have partnered with <big>Improbable Beef</big> to make.  Each chart is interactive, so please
+        click on the Test Subject ID No. (which refers to a corresponding individual who is participating in our study) and see what kind of bacteria
+        they have in their belly buttons!</p>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <!-- optionChanged was this.value before i changed it to newSample...still doesn't work--> 
+          <!-- <select id="selDataset" onchange="optionChanged(this.value)"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="barBacteria"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
